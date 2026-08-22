@@ -1,0 +1,45 @@
+# 1. Define / redefine middle domains
+
+# Human MAEL (Q96JY0), 130–326
+select human_mid, AF-Q96JY0-F1-model_v6 and resi 130-326
+
+# Fly Maelstrom (Q9VNS0-2), 120–335
+select fly_mid, AF-Q9VNS0-2-F1-model_v6 and resi 120-335
+
+# New protein (*****), ***–***
+select fungi_mid, AF-*****-F1-model_v6 and resi ***-***
+
+
+# 2. Align to human as reference
+
+# Fly vs human – structure-based superposition
+super fly_mid, human_mid
+
+# ***** vs human – sequence-independent superposition
+super fungi_mid, human_mid
+# (If you want, you can also try sequence-based:
+#  align fungi_mid, human_mid)
+
+
+# 3. Show only the aligned cores and colour them
+
+hide everything, all
+show cartoon, human_mid or fly_mid or fungi8_mid
+
+color red,    human_mid
+color orange, fly_mid
+color cyan,   fungi_mid
+
+zoom human_mid or fly_mid or fungi8_mid
+
+
+# 4. Optional: highlight a conserved residue across all three
+
+show sticks, human_mid and resi 200
+color yellow, human_mid and resi 200
+
+show sticks, fly_mid and resi 200
+color yellow, fly_mid and resi 200
+
+show sticks, fungi_mid and resi 200
+color yellow, fungi_mid and resi 200
