@@ -1,0 +1,13 @@
+ECHC and DEDD motif conservation across 81 taxa,,,,,
+,,,,,
+Reference sequence: Homo sapiens (this alignment),,,,,
+DEDD positions labelled by ancestral residue identity; Homo sapiens itself does not retain these residues (see Full Data sheet).,,,,,
+,,,,,
+Motif,Position (Homo sapiens numbering),Alignment column,Expected residue,Taxa matching,Conservation (%)
+ECHC,Glu138,460,E,79,97.5%
+ECHC,Cys283,657,C,80,98.8%
+ECHC,His286,660,H,79,97.5%
+ECHC,Cys294,672,C,78,96.3%
+DEDD,Asp119,440,D,11,13.6%
+DEDD,Glu121,442,E,7,8.6%
+DEDD,Asp298,676,D,6,7.4%
