@@ -1,0 +1,25 @@
+# Rename the three loaded objects 
+set_name AF-Q96JY0-F1-model_v6, human_mael
+set_name AF-Q9VNS0-2-F1-model_v6, fly_mael
+set_name AF-L8H4J4-F1-model_v6, acanthamoeba
+
+# Select the regions used in your MSA 
+select human_mid, human_mael and resi 130-326
+select fly_mid, fly_mael and resi 120-335
+select aca_mid, acanthamoeba and resi 256-337
+
+# Use human MAEL as the fixed reference
+super aca_mid, human_mid
+super fly_mid, human_mid
+
+# Hide full-length proteins and display only selected domains
+hide everything, all
+show cartoon, human_mid or fly_mid or aca_mid
+
+# Give each protein a distinct colour
+color red, human_mid
+color orange, fly_mid
+color cyan, aca_mid
+
+# Centre and enlarge the aligned domains
+zoom human_mid or fly_mid or aca_mid
