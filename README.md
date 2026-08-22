@@ -59,6 +59,7 @@ figure/pymol
 Figure2HomoSapien_DomainColourCode.pse — PyMOL session underlying Figure 2
 align/Alignment code human fly acanthamoeba — commands for the three-way superposition in Figure 5, with H. sapiens 130–326, D. melanogaster 120–335 and A. castellanii 256–337 superposed onto the human domain
 align/fungi align or super — template commands used to superpose each filtered Foldseek fungal candidate onto the human reference, with accession and residue range substituted per candidate
+
 **License**
 
 Data copied from other sources are covered by their own licences. Sequence data, accessions and taxonomic information were retrieved from UniProt, OrthoDB, PANTHER, NCBI and EukProt. Structural models were retrieved from AlphaFold DB.
