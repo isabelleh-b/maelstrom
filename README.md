@@ -76,6 +76,4 @@ Figures used in the dissertation, numbered to match. Figures 1, 4, 6, 7, 8 and 9
 
 # License
 
-Original code and data analysis in this repository is covered by an Apache 2.0 licence, see LICENCE.
-
 Data copied from other sources are covered by their own licences. Sequence data, accessions and taxonomic information were retrieved from UniProt, OrthoDB, PANTHER, NCBI and EukProt. Structural models were retrieved from AlphaFold DB.
